@@ -72,4 +72,9 @@ $vm_cpus = 1
 #$shared_folders = {}
 
 # Enable port forwarding from guest(s) to host machine, syntax is: { 80 => 8080 }, auto correction is enabled by default.
-#$forwarded_ports = {}
+$forwarded_ports = {
+  3000 => 3000,
+  3306 => 3306,
+  5432 => 5432,
+  8080 => 8080
+}
