@@ -46,7 +46,7 @@ end
 #$image_version = "current"
 
 # Official CoreOS channel from which updates should be downloaded
-$update_channel='alpha'
+$update_channel='beta'
 
 # Log the serial consoles of CoreOS VMs to log/
 # Enable by setting value to true, disable with false
@@ -69,16 +69,15 @@ $share_home=false
 # Customize VMs
 #$vm_gui = false
 $vm_memory = 2048
-$vm_cpus = 1
+$vm_cpus = 2
 
 # Share additional folders to the CoreOS VMs
 # For example,
 # $shared_folders = {'/path/on/host' => '/path/on/guest', '/home/foo/app' => '/app'}
 # or, to map host folders to guest folders of the same name,
 # $shared_folders = Hash[*['/home/foo/app1', '/home/foo/app2'].map{|d| [d, d]}.flatten]
-$shared_folders = {
-  '/apps' => '/apps'
-}
+# $shared_folders = {
+# }
 
 # Enable port forwarding from guest(s) to host machine, syntax is: { 80 => 8080 }, auto correction is enabled by default.
 $forwarded_ports = {
