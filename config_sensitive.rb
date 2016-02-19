@@ -1,3 +1,3 @@
 $shared_folders = {
-  '/Users/jonesvitolo/Project/sisprev/gpx' => '/apps/gpx'
+  # '/Users/jonesvitolo/Project/sisprev/gpx' => '/apps/gpx'
 }
